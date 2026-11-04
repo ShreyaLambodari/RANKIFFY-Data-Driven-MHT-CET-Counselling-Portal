@@ -1,0 +1,269 @@
+/* ============================= */
+/* SAVED COLLEGES PAGE */
+/* ============================= */
+
+.saved-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+.saved-header {
+    margin-bottom: 35px;
+}
+
+.saved-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.saved-header p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* ============================= */
+/* SAVED COLLEGE LIST */
+/* ============================= */
+
+#savedCollegeList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ============================= */
+/* NO SAVED COLLEGES */
+/* ============================= */
+
+#noSavedColleges {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#noSavedColleges a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ============================= */
+/* SAVED COLLEGE CARDS */
+/* ============================= */
+
+#savedCollegeList .college-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    padding: 24px;
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+#savedCollegeList .college-info {
+    flex: 1;
+}
+
+#savedCollegeList .college-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+#savedCollegeList .college-meta {
+    margin-bottom: 8px;
+}
+
+#savedCollegeList .college-meta span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#savedCollegeList .university {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+#savedCollegeList .college-result {
+    min-width: 160px;
+}
+
+#savedCollegeList .college-result p {
+    margin: 8px 0 2px;
+    color: #666;
+    font-size: 13px;
+}
+
+#savedCollegeList .college-result strong {
+    font-size: 16px;
+}
+
+#savedCollegeList .chance {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    #savedCollegeList .college-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #savedCollegeList .college-result {
+        width: 100%;
+    }
+
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 60px;
+
+    border-bottom: 1px solid #e5e7eb;
+    background: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.college-card .college-result .not-available {
+    color: #999;
+    font-weight: 500;
+}
+
+
+/* ============================= */
+/* REMOVE SAVED COLLEGE BUTTON */
+/* ============================= */
+
+#savedCollegeList .remove-college-btn {
+    flex-shrink: 0;
+    align-self: center;
+
+    padding: 9px 15px;
+
+    background: #fff;
+    color: #dc2626;
+
+    border: 1px solid #dc2626;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#savedCollegeList .remove-college-btn:hover {
+    background: #dc2626;
+    color: #fff;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    #savedCollegeList .remove-college-btn {
+        align-self: flex-end;
+    }
+}
+
+
+/* DOWNLOAD SAVED COLLEGES BUTTON */
+
+.saved-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.saved-header-text {
+    flex: 1;
+}
+
+.download-colleges-btn {
+    padding: 11px 18px;
+    background: #2563eb;
+    color: #ffffff;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.download-colleges-btn:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+    .download-colleges-btn {
+        width: 100%;
+    }
+}
+

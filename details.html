@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Details | RANKIFY</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./details.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container nav">
+
+        <div class="logo">
+
+            <h2>RANKIFY</h2>
+
+            <p>(MHT-CET Counselling Portal)</p>
+
+        </div>
+
+        <nav>
+
+            <a href="./index.html">Home</a>
+
+            <a href="#">Guide</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="details-page">
+
+    <div class="container">
+
+        <div class="page-heading">
+
+            <h1>Student Details</h1>
+
+            <p>
+                Enter your details to receive personalized college recommendations.
+            </p>
+
+        </div>
+
+
+        <form class="details-form" id="studentForm">
+
+
+            <!-- ================================= -->
+            <!-- ACADEMIC INFORMATION -->
+            <!-- ================================= -->
+
+            <div class="form-card">
+
+                <h2>Academic Information</h2>
+
+
+                <div class="input-grid">
+
+
+                    <!-- MHT-CET PERCENTILE -->
+
+                    <div class="input-group">
+
+                        <label for="percentile">
+                            MHT-CET Percentile *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="percentile"
+                            name="percentile"
+                            min="0"
+                            max="100"
+                            step="0.01"
+                            placeholder="Example: 97.85"
+                            required>
+
+                    </div>
+
+
+                    <!-- CASTE CATEGORY -->
+
+                    <div class="input-group">
+
+                        <label for="category">
+                            Caste Category *
+                        </label>
+
+                        <select
+                            id="category"
+                            name="category"
+                            required>
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="OPEN">OPEN</option>
+                            <option value="OBC">OBC</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="EWS">EWS</option>
+                            <option value="NT">NT</option>
+                            <option value="SBC">SBC</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- GENDER -->
+
+                    <div class="input-group">
+
+                        <label for="gender">
+                            Gender *
+                        </label>
+
+                        <select
+                            id="gender"
+                            name="gender"
+                            required>
+
+                            <option value="">
+                                Select Gender
+                            </option>
+
+                            <option value="MALE">
+                                Male
+                            </option>
+
+                            <option value="FEMALE">
+                                Female
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- CANDIDATURE TYPE -->
+
+                    <div class="input-group">
+
+                        <label for="candidatureType">
+                            Candidature Type *
+                        </label>
+
+                        <select
+                            id="candidatureType"
+                            name="candidatureType"
+                            required>
+
+                            <option value="">
+                                Select Candidature Type
+                            </option>
+
+                            <option value="A">
+                                Type A
+                            </option>
+
+                            <option value="B">
+                                Type B
+                            </option>
+
+                            <option value="C">
+                                Type C
+                            </option>
+
+                            <option value="D">
+                                Type D
+                            </option>
+
+                            <option value="E">
+                                Type E
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- HOME UNIVERSITY -->
+
+                    <div class="input-group">
+
+                        <label for="homeUniversity">
+                            Home University / University Status *
+                        </label>
+
+                        <select
+                            id="homeUniversity"
+                            name="homeUniversity"
+                            required>
+
+        <!-- <option value="home-university">
+            Home University
+        </option> -->
+
+        <option value="autonomous">
+            Autonomous Institute
+        </option>
+
+        <option value="sgbau">
+            Sant Gadge Baba Amravati University
+        </option>
+
+        <option value="srtmun">
+            Swami Ramanand Teerth Marathwada University, Nanded
+        </option>
+
+        <option value="dbamu">
+            Dr. Babasaheb Ambedkar Marathwada University
+        </option>
+
+        <option value="deemed-university">
+            Deemed to be University
+        </option>
+
+        <option value="mumbai-university">
+            Mumbai University
+        </option>
+
+        <option value="dbatu">
+            Dr. Babasaheb Ambedkar Technological University,Lonere
+        </option>
+
+        <option value="sndt">
+            SNDT Women's University
+        </option>
+
+        <option value="gondwana">
+            Gondwana University
+        </option>
+
+        <option value="rtmnu">
+            Rashtrasant Tukadoji Maharaj Nagpur University
+        </option>
+
+        <option value="kbc-nmu">
+            Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon
+        </option>
+
+        <option value="sppu">
+            Savitribai Phule Pune University
+        </option>
+
+        <option value="shivaji-university">
+            Shivaji University
+        </option>
+
+        <option value="sppu-solapur">
+            Punyashlok Ahilyadevi Holkar Solapur University
+        </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+    <label for="allMaharashtraRank">
+        All Maharashtra Rank
+        <span class="optional">(Optional)</span>
+    </label>
+
+    <input
+        type="number"
+        id="allMaharashtraRank"
+        name="allMaharashtraRank"
+        placeholder="e.g. 12500"
+        min="1"
+    >
+</div>
+
+
+                    <!-- CAP ROUND -->
+
+                    <div class="input-group">
+
+                        <label for="capRound">
+                            CAP Round *
+                        </label>
+
+                        <select
+                            id="capRound"
+                            name="capRound"
+                            required>
+
+                            <option value="">
+                                Select CAP Round
+                            </option>
+
+                            <option value="ROUND_1">
+                                Round 1
+                            </option>
+
+                            <option value="ROUND_2">
+                                Round 2
+                            </option>
+
+                            <option value="ROUND_3">
+                                Round 3
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="form-card">
+
+    <h2>JEE Main Information</h2>
+
+    <div class="input-grid">
+
+        <!-- JEE MAIN STATUS -->
+        <div class="input-group">
+
+            <label for="jeeStatus">
+                Do you have a JEE Main percentile? *
+            </label>
+
+            <select
+                id="jeeStatus"
+                name="jeeStatus"
+                required>
+
+                <option value="">
+                    Select
+                </option>
+
+                <option value="YES">
+                    Yes
+                </option>
+
+                <option value="NO">
+                    No
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- JEE MAIN PERCENTILE -->
+        <div
+            class="input-group"
+            id="jeePercentileGroup"
+            style="display: none;">
+
+            <label for="jeePercentile">
+                JEE Main Percentile
+            </label>
+
+            <input
+                type="number"
+                id="jeePercentile"
+                name="jeePercentile"
+                min="0"
+                max="100"
+                step="0.01"
+                placeholder="Example: 92.45">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- ================================= -->
+            <!-- ADMISSION QUOTA -->
+            <!-- ================================= -->
+
+            <div class="form-card">
+
+                <h2>Admission Quota</h2>
+
+                <p class="form-description">
+                    Select the applicable admission quota.
+                </p>
+
+
+                <div class="quota-grid">
+
+
+                    <label class="quota-option">
+
+                        <input
+                            type="checkbox"
+                            name="quota"
+                            value="EWS">
+
+                        <span>EWS</span>
+
+                    </label>
+
+
+                    <label class="quota-option">
+
+                        <input
+                            type="checkbox"
+                            name="quota"
+                            value="TFWS">
+
+                        <span>TFWS</span>
+
+                    </label>
+
+
+                    <label class="quota-option">
+
+                        <input
+                            type="checkbox"
+                            name="quota"
+                            value="PWD">
+
+                        <span>PWD</span>
+
+                    </label>
+
+
+                    <label class="quota-option">
+
+                        <input
+                            type="checkbox"
+                            name="quota"
+                            value="DEFENCE">
+
+                        <span>Defence</span>
+
+                    </label>
+
+
+                    <label class="quota-option">
+
+                        <input
+                            type="checkbox"
+                            name="quota"
+                            value="ORPHAN">
+
+                        <span>Orphan</span>
+
+                    </label>
+
+
+                    <label class="quota-option">
+
+                        <input
+                            type="checkbox"
+                            name="quota"
+                            value="MINORITY">
+
+                        <span>Minority</span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================= -->
+            <!-- COLLEGE PREFERENCES -->
+            <!-- ================================= -->
+
+            <div class="form-card">
+
+                <h2>Preferences</h2>
+
+
+                <div class="input-grid">
+
+
+                    <!-- PREFERRED BRANCH -->
+
+                    <div class="input-group">
+
+                        <label for="preferredBranch">
+                            Preferred Branch / Course *
+                        </label>
+
+                        <select
+                            id="preferredBranch"
+                            name="preferredBranch"
+                            required>
+
+    <option value="">
+        Select Branch
+    </option>
+
+    <option value="5G">
+        5G
+    </option>
+
+    <option value="Aeronautical Engineering">
+        Aeronautical Engineering
+    </option>
+
+    <option value="Agricultural Engineering">
+        Agricultural Engineering
+    </option>
+
+    <option value="Artificial Intelligence">
+        Artificial Intelligence
+    </option>
+
+    <option value="Artificial Intelligence (AI) and Data Science">
+        Artificial Intelligence (AI) and Data Science
+    </option>
+
+    <option value="Artificial Intelligence and Data Science">
+        Artificial Intelligence and Data Science
+    </option>
+
+    <option value="Artificial Intelligence and Machine Learning">
+        Artificial Intelligence and Machine Learning
+    </option>
+
+    <option value="Automation and Robotics">
+        Automation and Robotics
+    </option>
+
+    <option value="Automobile Engineering">
+        Automobile Engineering
+    </option>
+
+    <option value="Bio Medical Engineering">
+        Bio Medical Engineering
+    </option>
+
+    <option value="Bio Technology">
+        Bio Technology
+    </option>
+
+    <option value="Chemical Engineering">
+        Chemical Engineering
+    </option>
+
+    <option value="Civil and Environmental Engineering">
+        Civil and Environmental Engineering
+    </option>
+
+    <option value="Civil and infrastructure Engineering">
+        Civil and infrastructure Engineering
+    </option>
+
+    <option value="Civil Engineering">
+        Civil Engineering
+    </option>
+
+    <option value="Civil Engineering (Structural Engineering)">
+        Civil Engineering (Structural Engineering)
+    </option>
+
+    <option value="Civil Engineering and Planning">
+        Civil Engineering and Planning
+    </option>
+
+    <option value="Civil Engineering with Computer Application">
+        Civil Engineering with Computer Application
+    </option>
+
+    <option value="Computer Engineering">
+        Computer Engineering
+    </option>
+
+    <option value="Computer Engineering (Regional Language)">
+        Computer Engineering (Regional Language)
+    </option>
+
+    <option value="Computer Engineering (Software Engineering)">
+        Computer Engineering (Software Engineering)
+    </option>
+
+    <option value="Computer Science">
+        Computer Science
+    </option>
+
+    <option value="Computer Science and Business Systems">
+        Computer Science and Business Systems
+    </option>
+
+    <option value="Computer Science and Design">
+        Computer Science and Design
+    </option>
+
+    <option value="Computer Science and Engineering">
+        Computer Science and Engineering
+    </option>
+
+    <option value="Computer Science and Engineering (Artificial Intelligence and Data Science)">
+        Computer Science and Engineering (Artificial Intelligence and Data Science)
+    </option>
+
+    <option value="Computer Science and Engineering (Artificial Intelligence)">
+        Computer Science and Engineering (Artificial Intelligence)
+    </option>
+
+    <option value="Computer Science and Engineering (Cyber Security)">
+        Computer Science and Engineering (Cyber Security)
+    </option>
+
+    <option value="Computer Science and Engineering (Internet of Things and Cyber Security Including Block Chain">
+        Computer Science and Engineering (Internet of Things and Cyber Security Including Block Chain
+    </option>
+
+    <option value="Computer Science and Engineering (IoT)">
+        Computer Science and Engineering (IoT)
+    </option>
+
+    <option value="Computer Science and Engineering(Artificial Intelligence and Machine Learning)">
+        Computer Science and Engineering(Artificial Intelligence and Machine Learning)
+    </option>
+
+    <option value="Computer Science and Engineering(Cyber Security)">
+        Computer Science and Engineering(Cyber Security)
+    </option>
+
+    <option value="Computer Science and Engineering(Data Science)">
+        Computer Science and Engineering(Data Science)
+    </option>
+
+    <option value="Computer Science and Information Technology">
+        Computer Science and Information Technology
+    </option>
+
+    <option value="Computer Science and Technology">
+        Computer Science and Technology
+    </option>
+
+    <option value="Computer Technology">
+        Computer Technology
+    </option>
+
+    <option value="Cyber Security">
+        Cyber Security
+    </option>
+
+    <option value="Data Science">
+        Data Science
+    </option>
+
+    <option value="Dyestuff Technology">
+        Dyestuff Technology
+    </option>
+
+    <option value="Electrical and Computer Engineering">
+        Electrical and Computer Engineering
+    </option>
+
+    <option value="Electrical and Electronics Engineering">
+        Electrical and Electronics Engineering
+    </option>
+
+    <option value="Electrical Engg[Electronics and Power]">
+        Electrical Engg[Electronics and Power]
+    </option>
+
+    <option value="Electrical Engineering">
+        Electrical Engineering
+    </option>
+
+    <option value="Electrical, Electronics and Power">
+        Electrical, Electronics and Power
+    </option>
+
+    <option value="Electronics & Telecommunication Engineering">
+        Electronics & Telecommunication Engineering
+    </option>
+
+    <option value="Electronics and Biomedical Engineering">
+        Electronics and Biomedical Engineering
+    </option>
+
+    <option value="Electronics and Communication (Advanced Communication Technology)">
+        Electronics and Communication (Advanced Communication Technology)
+    </option>
+
+    <option value="Electronics and Communication Engineering">
+        Electronics and Communication Engineering
+    </option>
+
+    <option value="ELECTRONICS AND COMMUNICATION ENGINEERING (BIO-MEDICAL ENGINEERING)">
+        ELECTRONICS AND COMMUNICATION ENGINEERING (BIO-MEDICAL ENGINEERING)
+    </option>
+
+    <option value="Electronics and Communication(Advanced Communication Technology)">
+        Electronics and Communication(Advanced Communication Technology)
+    </option>
+
+    <option value="Electronics and Computer Engineering">
+        Electronics and Computer Engineering
+    </option>
+
+    <option value="Electronics and Computer Science">
+        Electronics and Computer Science
+    </option>
+
+    <option value="Electronics and Telecommunication Engg">
+        Electronics and Telecommunication Engg
+    </option>
+
+    <option value="Electronics Engineering">
+        Electronics Engineering
+    </option>
+
+    <option value="Electronics Engineering ( VLSI Design and Technology)">
+        Electronics Engineering ( VLSI Design and Technology)
+    </option>
+
+    <option value="Fashion Technology">
+        Fashion Technology
+    </option>
+
+    <option value="Fibres and Textile Processing Technology">
+        Fibres and Textile Processing Technology
+    </option>
+
+    <option value="Food Engineering">
+        Food Engineering
+    </option>
+
+    <option value="Food Engineering and Technology">
+        Food Engineering and Technology
+    </option>
+
+    <option value="Food Technology">
+        Food Technology
+    </option>
+
+    <option value="Food Technology And Management">
+        Food Technology And Management
+    </option>
+
+    <option value="Industrial IoT">
+        Industrial IoT
+    </option>
+
+    <option value="Information Technology">
+        Information Technology
+    </option>
+
+    <option value="Instrumentation and Control Engineering">
+        Instrumentation and Control Engineering
+    </option>
+
+    <option value="Instrumentation Engineering">
+        Instrumentation Engineering
+    </option>
+
+    <option value="Internet of Things (IoT)">
+        Internet of Things (IoT)
+    </option>
+
+    <option value="Man Made Textile Technology">
+        Man Made Textile Technology
+    </option>
+
+    <option value="Manufacturing Science and Engineering">
+        Manufacturing Science and Engineering
+    </option>
+
+    <option value="Mechanical & Automation Engineering">
+        Mechanical & Automation Engineering
+    </option>
+
+    <option value="Mechanical and Automation Engineering">
+        Mechanical and Automation Engineering
+    </option>
+
+    <option value="Mechanical and Mechatronics Engineering (Additive Manufacturing)">
+        Mechanical and Mechatronics Engineering (Additive Manufacturing)
+    </option>
+
+    <option value="MECHANICAL AND RAIL ENGINEERING">
+        MECHANICAL AND RAIL ENGINEERING
+    </option>
+
+    <option value="Mechanical Engineering">
+        Mechanical Engineering
+    </option>
+
+    <option value="Mechanical Engineering Automobile">
+        Mechanical Engineering Automobile
+    </option>
+
+    <option value="Mechanical Engineering[Sandwich]">
+        Mechanical Engineering[Sandwich]
+    </option>
+
+    <option value="Mechatronics Engineering">
+        Mechatronics Engineering
+    </option>
+
+    <option value="Metallurgy and Material Technology">
+        Metallurgy and Material Technology
+    </option>
+
+    <option value="Mining Engineering">
+        Mining Engineering
+    </option>
+
+    <option value="Oil and Paints Technology">
+        Oil and Paints Technology
+    </option>
+
+    <option value="Oil Fats and Waxes Technology">
+        Oil Fats and Waxes Technology
+    </option>
+
+    <option value="Oil Technology">
+        Oil Technology
+    </option>
+
+    <option value="Oil,Oleochemicals and Surfactants Technology">
+        Oil,Oleochemicals and Surfactants Technology
+    </option>
+
+    <option value="Paints Technology">
+        Paints Technology
+    </option>
+
+    <option value="Paper and Pulp Technology">
+        Paper and Pulp Technology
+    </option>
+
+    <option value="Petro Chemical Engineering">
+        Petro Chemical Engineering
+    </option>
+
+    <option value="Pharmaceutical and Fine Chemical Technology">
+        Pharmaceutical and Fine Chemical Technology
+    </option>
+
+    <option value="Pharmaceuticals Chemistry and Technology">
+        Pharmaceuticals Chemistry and Technology
+    </option>
+
+    <option value="Plastic and Polymer Engineering">
+        Plastic and Polymer Engineering
+    </option>
+
+    <option value="Plastic Technology">
+        Plastic Technology
+    </option>
+
+    <option value="Polymer Engineering and Technology">
+        Polymer Engineering and Technology
+    </option>
+
+    <option value="Printing and Packing Technology">
+        Printing and Packing Technology
+    </option>
+
+    <option value="Production Engineering">
+        Production Engineering
+    </option>
+
+    <option value="Production Engineering[Sandwich]">
+        Production Engineering[Sandwich]
+    </option>
+
+    <option value="Robotics and Artificial Intelligence">
+        Robotics and Artificial Intelligence
+    </option>
+
+    <option value="Robotics and Automation">
+        Robotics and Automation
+    </option>
+
+    <option value="Safety and Fire Engineering">
+        Safety and Fire Engineering
+    </option>
+
+    <option value="Structural Engineering">
+        Structural Engineering
+    </option>
+
+    <option value="Surface Coating Technology">
+        Surface Coating Technology
+    </option>
+
+    <option value="Technical Textiles">
+        Technical Textiles
+    </option>
+
+    <option value="Textile Chemistry">
+        Textile Chemistry
+    </option>
+
+    <option value="Textile Engineering / Technology">
+        Textile Engineering / Technology
+    </option>
+
+    <option value="Textile Technology">
+        Textile Technology
+    </option>
+
+    <option value="VLSI">
+        VLSI
+    </option>
+
+</select>
+
+                     
+
+                    </div>
+
+
+                    <!-- PREFERRED COLLEGE -->
+
+                    <div class="input-group">
+
+                        <label for="preferredCollege">
+                            Preferred College
+                            <span>(Optional)</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="preferredCollege"
+                            name="preferredCollege"
+                            placeholder="Example: VNIT Nagpur">
+
+                    </div>
+
+
+                    <!-- PREFERRED LOCATION -->
+
+                    <div class="input-group">
+
+                        <label for="preferredLocation">
+                            Preferred Location / District
+                            <span>(Optional)</span>
+                        </label>
+
+                        <select
+                            id="preferredLocation"
+                            name="preferredLocation">
+
+                            <option value="">
+            All Cities
+        </option>
+
+        <option value="Chhatrapati Sambhajinagar">
+            Chhatrapati Sambhajinagar
+        </option>
+
+        <option value="Beed">
+            Beed
+        </option>
+
+        <option value="Jalna">
+            Jalna
+        </option>
+
+        <option value="Ahmednagar">
+            Dharashiv
+        </option>
+
+        <option value="Akola">
+            Akola
+        </option>
+
+        <option value="Latur">
+            Latur
+        </option>
+
+        <option value="Nanded">
+            Nanded
+        </option>
+
+        <option value="Mumbai">
+            Mumbai
+        </option>
+
+        <option value="Amravati">
+            Amravati
+        </option>
+
+        <option value="Raigad">
+            Raigad
+        </option>
+
+        <option value="Sindhudurg">
+            Sindhudurg
+        </option>
+
+        <option value="Thane">
+            Thane
+        </option>
+
+        <option value="Dhule">
+            Dhule
+        </option>
+
+        <option value="Jalgaon">
+            Jalgaon
+        </option>
+
+        <option value="Nandurbar">
+            Nandurbar
+        </option>
+
+        <option value="Badlapur">
+            Badlapur
+        </option>
+
+        <option value="Nashik">
+            Nashik
+        </option>
+
+        <option value="Pune">
+            Pune
+        </option>
+
+        <option value="Kolhapur">
+            Kolhapur
+        </option>
+
+        <option value="Sangli">
+            Sangli
+        </option>
+
+        <option value="Satara">
+            Satara
+        </option>
+
+        <option value="Solapur">
+            Solapur
+        </option>
+
+        <option value="Badnera">
+            Badnera
+        </option>
+
+        <option value="Bhandara">
+            Bhandara
+        </option>
+
+        <option value="Buldhana">
+            Buldhana
+        </option>
+
+        <option value="Washim">
+            Washim
+        </option>
+
+        <option value="Yavatmal">
+            Yavatmal
+        </option>
+
+        <option value="Chandrapur">
+            Chandrapur
+        </option>
+
+        <option value="Kajrat">
+            Kajrata
+        </option>
+
+        <option value="Nagpur">
+            Nagpur
+        </option>
+
+        <option value="Wardha">
+            Wardha
+        </option>
+
+        <option value="Wagholi">
+            Wagholi
+        </option>
+
+        <option value="Yelgaon">
+            Yelgaon
+        </option>
+
+        <option value="Gadchiroli">
+            Gadchiroli
+        </option>
+        
+<option value="Parbhani">
+            Parbhani
+        </option>
+
+<option value="Osmanabad">
+            Osmanabad
+        </option>
+
+<option value="Palghar">
+            Palghar
+        </option>
+
+<option value="Panvel">
+            Panvel
+        </option>
+
+<option value="Pusad">
+            Pusad
+        </option>
+
+
+<option value="Ramtek">
+            Ramtek
+        </option>
+
+
+<option value="Ratnagiri">
+            Ratnagiri
+        </option>
+
+
+<option value="Shahpur">
+            Shahpur
+        </option>
+
+<option value="Shegaon">
+            Shegaon
+        </option>
+
+
+<option value="Ulhasnagar">
+            Ulhasnagar
+        </option>
+
+<option value="Virar">
+            Virar
+        </option>
+
+<option value="Nile">
+            Nile
+        </option>
+
+<option value="Ohar">
+            Ohar
+        </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================= -->
+            <!-- SUBMIT BUTTON -->
+            <!-- ================================= -->
+
+            <div class="action">
+    <button type="button" id="generateRecommendations">
+        Get Recommendations
+    </button>
+</div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<script src="./details.js"></script>
+
+</body>
+
+</html>

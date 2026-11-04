@@ -1,0 +1,361 @@
+.details-page {
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+.page-heading {
+    margin-bottom: 40px;
+}
+
+.page-heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: var(--text-light);
+}
+
+
+/* ============================= */
+/* FORM LAYOUT */
+/* ============================= */
+
+.details-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.optional {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-left: 5px;
+}
+
+.field-hint {
+    margin: 7px 0 0;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+/* ============================= */
+/* FORM CARD */
+/* ============================= */
+
+.form-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+}
+
+.form-card h2 {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.form-description {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 22px;
+}
+
+
+/* ============================= */
+/* INPUT GRID */
+/* ============================= */
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: .95rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group label span {
+    color: var(--text-light);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+
+/* ============================= */
+/* INPUTS & SELECT */
+/* ============================= */
+
+.input-group input,
+.input-group select {
+    height: 50px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: .95rem;
+    outline: none;
+    transition: .25s;
+    background: white;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: var(--primary);
+}
+
+
+/* ============================= */
+/* SMALL TEXT */
+/* ============================= */
+
+.input-group small {
+    margin-top: 8px;
+    color: var(--text-light);
+    font-size: .8rem;
+}
+
+
+/* ============================= */
+/* ADMISSION QUOTA */
+/* ============================= */
+
+.quota-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.quota-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 18px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    background: white;
+}
+
+.quota-option:hover {
+    border-color: var(--primary);
+    background: #f8f9ff;
+}
+
+.quota-option input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: var(--primary);
+
+    cursor: pointer;
+}
+
+.quota-option span {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+/* ============================= */
+/* PROFILE CARD */
+/* ============================= */
+
+.profile-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 110px;
+}
+
+.profile-card h3 {
+    margin-bottom: 22px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.summary-row:last-child {
+    border: none;
+}
+
+.summary-label {
+    color: var(--text-light);
+}
+
+.summary-value {
+    font-weight: 600;
+    color: var(--text);
+}
+
+
+/* ============================= */
+/* SUBMIT BUTTON */
+/* ============================= */
+
+.action {
+    margin-top: 30px;
+}
+
+.action button {
+    width: 100%;
+    height: 54px;
+
+    border: none;
+
+    background: var(--primary);
+    color: white;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.action button:hover {
+    background: var(--primary-light);
+}
+
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .details-page {
+        padding: 40px 0;
+    }
+
+    .page-heading h1 {
+        font-size: 2rem;
+    }
+
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quota-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-card {
+        padding: 22px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .quota-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ============================= */
+/* ALL MAHARASHTRA RANK INPUT */
+/* ============================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: .95rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group .optional {
+    color: var(--text-light);
+    font-size: .8rem;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.form-group input[type="number"] {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 0 15px;
+
+    font-size: .95rem;
+    font-family: inherit;
+
+    outline: none;
+    background: white;
+
+    transition: .25s;
+}
+
+.form-group input[type="number"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-group input[type="number"]::placeholder {
+    color: var(--text-light);
+    opacity: 0.7;
+}
+
+/* Number input arrows */
+.form-group input[type="number"]::-webkit-inner-spin-button,
+.form-group input[type="number"]::-webkit-outer-spin-button {
+    opacity: 0.5;
+}
+
+#jeePercentileGroup,
+#jeeStatus {
+    width: 100%;
+}
+.form-card .input-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#jeeStatus,
+#jeePercentile {
+    width: 100%;
+    height: 50px;
+    padding: 12px 15px;
+    font-size: 15px;
+    box-sizing: border-box;
+}

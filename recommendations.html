@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rankify - Recommendations</title>
+
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Recommendations page stylesheet -->
+    <link rel="stylesheet" href="recommendations.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- NAVBAR -->
+    <!-- ============================= -->
+
+    <header class="navbar">
+        <div class="container">
+            <!-- <div class="logo">
+                Rankify
+            </div> -->
+
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- RECOMMENDATIONS PAGE -->
+    <!-- ============================= -->
+
+    <main class="recommendations-page">
+
+        <div class="container">
+
+            <!-- Page Heading -->
+
+            <div class="page-heading">
+                <h2>Recommended Colleges</h2>
+
+                <p>
+                    Colleges matching your profile and preferences
+                </p>
+
+            </div>
+
+
+            <!-- ============================= -->
+            <!-- MAIN LAYOUT -->
+            <!-- ============================= -->
+
+            <div class="recommendations-layout">
+
+
+                <!-- ============================= -->
+                <!-- FILTER SIDEBAR -->
+                <!-- ============================= -->
+
+                <aside class="filter-card">
+
+                    <div class="filter-header">
+                        <h2>Filters</h2>
+
+                        <button
+                            type="button"
+                            id="clearFilters"
+                            class="clear-btn">
+                            Clear All
+                        </button>
+                    </div>
+
+
+                    <!-- College Name -->
+
+                    <div class="filter-group">
+
+                        <label for="collegeFilter">
+                            Colleges
+                        </label>
+
+                        <select id="collegeFilter">
+
+    <option value="">
+        All Colleges
+    </option>
+
+    <option value="cet">
+        Eligible via CET
+    </option>
+
+    <option value="jee">
+        Eligible via JEE
+    </option>
+
+    <option value="both">
+        Eligible via both
+    </option>
+
+
+</select>
+
+                    </div>
+
+
+                    <!-- Preferred City -->
+<div class="filter-group">
+
+    <label for="cityFilter">
+        Preferred City
+    </label>
+
+    <select id="cityFilter">
+
+        <option value="">
+            All Cities
+        </option>
+
+        <option value="Chhatrapati Sambhajinagar">
+            Chhatrapati Sambhajinagar
+        </option>
+
+        <option value="Beed">
+            Beed
+        </option>
+
+        <option value="Jalna">
+            Jalna
+        </option>
+
+        <option value="Ahmednagar">
+            Dharashiv
+        </option>
+
+        <option value="Akola">
+            Akola
+        </option>
+
+        <option value="Latur">
+            Latur
+        </option>
+
+        <option value="Nanded">
+            Nanded
+        </option>
+
+        <option value="Mumbai">
+            Mumbai
+        </option>
+
+        <option value="Amravati">
+            Amravati
+        </option>
+
+        <option value="Raigad">
+            Raigad
+        </option>
+
+        <option value="Sindhudurg">
+            Sindhudurg
+        </option>
+
+        <option value="Thane">
+            Thane
+        </option>
+
+        <option value="Dhule">
+            Dhule
+        </option>
+
+        <option value="Jalgaon">
+            Jalgaon
+        </option>
+
+        <option value="Nandurbar">
+            Nandurbar
+        </option>
+
+        <option value="Badlapur">
+            Badlapur
+        </option>
+
+        <option value="Nashik">
+            Nashik
+        </option>
+
+        <option value="Pune">
+            Pune
+        </option>
+
+        <option value="Kolhapur">
+            Kolhapur
+        </option>
+
+        <option value="Sangli">
+            Sangli
+        </option>
+
+        <option value="Satara">
+            Satara
+        </option>
+
+        <option value="Solapur">
+            Solapur
+        </option>
+
+        <option value="Badnera">
+            Badnera
+        </option>
+
+        <option value="Bhandara">
+            Bhandara
+        </option>
+
+        <option value="Buldhana">
+            Buldhana
+        </option>
+
+        <option value="Washim">
+            Washim
+        </option>
+
+        <option value="Yavatmal">
+            Yavatmal
+        </option>
+
+        <option value="Chandrapur">
+            Chandrapur
+        </option>
+
+        <option value="Kajrat">
+            Kajrata
+        </option>
+
+        <option value="Nagpur">
+            Nagpur
+        </option>
+
+        <option value="Wardha">
+            Wardha
+        </option>
+
+        <option value="Wagholi">
+            Wagholi
+        </option>
+
+        <option value="Yelgaon">
+            Yelgaon
+        </option>
+
+        <option value="Gadchiroli">
+            Gadchiroli
+        </option>
+        
+<option value="Parbhani">
+            Parbhani
+        </option>
+
+<option value="Osmanabad">
+            Osmanabad
+        </option>
+
+<option value="Palghar">
+            Palghar
+        </option>
+
+<option value="Panvel">
+            Panvel
+        </option>
+
+<option value="Pusad">
+            Pusad
+        </option>
+
+
+<option value="Ramtek">
+            Ramtek
+        </option>
+
+
+<option value="Ratnagiri">
+            Ratnagiri
+        </option>
+
+
+<option value="Shahpur">
+            Shahpur
+        </option>
+
+<option value="Shegaon">
+            Shegaon
+        </option>
+
+
+<option value="Ulhasnagar">
+            Ulhasnagar
+        </option>
+
+<option value="Virar">
+            Virar
+        </option>
+
+<option value="Nile">
+            Nile
+        </option>
+
+<option value="Ohar">
+            Ohar
+        </option>
+
+    </select>
+
+</div>
+
+
+                    <!-- University -->
+<div class="filter-group">
+
+    <label for="universityFilter">
+        University
+    </label>
+
+    <select id="universityFilter">
+
+        <option value="">
+            All Universities
+        </option>
+
+        <option value="home-university">
+            Home University
+        </option>
+
+        <option value="autonomous">
+            Autonomous Institute
+        </option>
+
+        <option value="sgbau">
+            Sant Gadge Baba Amravati University
+        </option>
+
+        <option value="srtmun">
+            Swami Ramanand Teerth Marathwada University, Nanded
+        </option>
+
+        <option value="dbamu">
+            Dr. Babasaheb Ambedkar Marathwada University
+        </option>
+
+        <option value="deemed-university">
+            Deemed to be University
+        </option>
+
+        <option value="mumbai-university">
+            Mumbai University
+        </option>
+
+        <option value="dbatu">
+            Dr. Babasaheb Ambedkar Technological University,Lonere
+        </option>
+
+        <option value="sndt">
+            SNDT Women's University
+        </option>
+
+        <option value="gondwana">
+            Gondwana University
+        </option>
+
+        <option value="rtmnu">
+            Rashtrasant Tukadoji Maharaj Nagpur University
+        </option>
+
+        <option value="kbc-nmu">
+            Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon
+        </option>
+
+        <option value="sppu">
+            Savitribai Phule Pune University
+        </option>
+
+        <option value="shivaji-university">
+            Shivaji University
+        </option>
+
+        <option value="sppu-solapur">
+            Punyashlok Ahilyadevi Holkar Solapur University
+        </option>
+
+    </select>
+
+</div>
+
+                </aside>
+
+
+                <!-- ============================= -->
+                <!-- RESULTS SECTION -->
+                <!-- ============================= -->
+
+                <section class="results-section">
+
+
+                    <!-- Results Header -->
+
+                    <div class="results-header">
+
+                        <div>
+                            <h2>Your Matches</h2>
+
+                            <p>
+                                <span id="resultCount">0</span>
+                                colleges found
+                            </p>
+                        </div>
+
+
+                        <!-- Sorting -->
+
+                        <div class="sort-box">
+
+                            <label for="sortFilter">
+                                Sort by
+                            </label>
+
+                            <select id="sortFilter">
+
+                                <option value="match">
+                                    Best Match
+                                </option>
+
+                                <!-- <option value="cutoff">
+                                    Predicted Cutoff
+                                </option> -->
+
+                                <option value="name">
+                                    College Name
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ============================= -->
+                    <!-- COLLEGE LIST -->
+                    <!-- ============================= -->
+
+                    <div id="collegeList" class="college-list">
+
+                    </div>
+
+
+                    <!-- No Results -->
+
+                    <div
+                        id="noResults"
+                        class="no-results"
+                        style="display: none;">
+
+                        <h3>No colleges found</h3>
+
+                        <p>
+                            Try changing or clearing your filters.
+                        </p>
+
+                    </div>
+
+                    <!-- ============================= -->
+<!-- SAVED COLLEGES -->
+<!-- ============================= -->
+
+<div class="saved-colleges-action">
+
+    <button
+        type="button"
+        id="viewSavedColleges">
+        View Saved Colleges
+    </button>
+
+</div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="recommendations.js"></script>
+
+</body>
+</html>

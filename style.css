@@ -1,0 +1,913 @@
+/* ==========================
+   GOOGLE FONT & RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primary: #1E3A8A;
+    --primary-light: #2563EB;
+
+    --background: #F8FAFC;
+
+    --white: #FFFFFF;
+
+    --text: #0F172A;
+
+    --text-light: #64748B;
+
+    --border: #E2E8F0;
+
+    --shadow:
+        0 8px 30px rgba(15,23,42,0.08);
+
+    --radius: 14px;
+
+    --transition: 0.3s ease;
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+}
+
+/* ==========================
+   REUSABLE CLASSES
+========================== */
+
+.container {
+
+    width: min(1180px,90%);
+    margin: auto;
+
+}
+
+section {
+
+    padding: 90px 0;
+
+}
+
+h1 {
+
+    font-size: 3.4rem;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+}
+
+h2 {
+
+    font-size: 2.2rem;
+
+    margin-bottom: 18px;
+
+}
+
+h3 {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
+
+}
+
+p {
+
+    color: var(--text-light);
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header {
+
+    background: white;
+
+    border-bottom: 1px solid var(--border);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
+
+}
+
+.nav {
+
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+.logo h2 {
+
+    color: var(--primary);
+
+    margin: 0;
+
+    font-size: 1.7rem;
+
+}
+
+.logo p {
+
+    font-size: .8rem;
+
+}
+
+nav {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+nav a {
+
+    color: var(--text);
+
+    font-weight: 500;
+
+    transition: var(--transition);
+
+}
+
+nav a:hover {
+
+    color: var(--primary-light);
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+
+    padding-top: 70px;
+
+}
+
+.hero-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+}
+
+.hero-left {
+
+    flex: 1;
+
+}
+
+.hero-right {
+
+    flex: 1;
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    background: #DBEAFE;
+
+    color: var(--primary);
+
+    border-radius: 999px;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+
+}
+
+.hero p {
+
+    margin: 30px 0;
+
+    max-width: 560px;
+
+    font-size: 1.05rem;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px 28px;
+
+    background: var(--primary);
+
+    color: white;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.primary-btn:hover {
+
+    background: var(--primary-light);
+
+    transform: translateY(-2px);
+
+}
+
+/* ==========================
+   HERO CARD
+========================== */
+
+.preview-card {
+
+    background: white;
+
+    border-radius: var(--radius);
+
+    padding: 35px;
+
+    box-shadow: var(--shadow);
+
+    border: 1px solid var(--border);
+
+}
+
+.preview-card h3 {
+
+    margin-bottom: 20px;
+
+}
+
+.preview-card ul {
+
+    list-style: none;
+
+}
+
+.preview-card li {
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.preview-card li:last-child {
+
+    border: none;
+
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats {
+
+    padding-top: 0;
+
+}
+
+.stat-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 20px;
+
+}
+
+.stat-grid div {
+
+    background: white;
+
+    border-radius: var(--radius);
+
+    padding: 35px;
+
+    text-align: center;
+
+    border: 1px solid var(--border);
+
+}
+
+.stat-grid h2 {
+
+    color: var(--primary);
+
+    margin-bottom: 6px;
+
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features h2 {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 28px;
+
+}
+
+.feature-card {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    padding: 32px;
+
+    transition: var(--transition);
+
+}
+
+.feature-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow);
+
+}
+
+.feature-card h3 {
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+
+}
+
+.feature-card p {
+
+    font-size: .95rem;
+
+}
+
+/* ==========================
+   WORKFLOW
+========================== */
+
+.workflow {
+
+    background: white;
+
+}
+
+.workflow h2 {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.steps {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.step {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    width: 180px;
+
+}
+
+.circle {
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+.line {
+
+    width: 70px;
+
+    height: 2px;
+
+    background: var(--border);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+
+    background: #0F172A;
+
+    color: white;
+
+    padding: 45px 0;
+
+}
+
+.footer {
+
+    text-align: center;
+
+}
+
+.footer h3 {
+
+    color: white;
+
+    margin-bottom: 10px;
+
+}
+
+.footer p {
+
+    color: #CBD5E1;
+
+    margin-top: 8px;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #CBD5E1;
+
+    border-radius: 30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #94A3B8;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1100px){
+
+.hero-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero p{
+
+margin-inline:auto;
+
+}
+
+.preview-card{
+
+max-width:550px;
+
+margin:auto;
+
+}
+
+.stat-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.feature-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:2.5rem;
+
+}
+
+h2{
+
+font-size:1.8rem;
+
+}
+
+.nav{
+
+height:auto;
+
+padding:18px 0;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+nav{
+
+gap:22px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.stat-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.steps{
+
+flex-direction:column;
+
+}
+
+.line{
+
+width:2px;
+
+height:45px;
+
+}
+
+.hero{
+
+padding-top:40px;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+width:92%;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.primary-btn{
+
+width:100%;
+
+}
+
+.badge{
+
+font-size:.8rem;
+
+}
+
+}
+
+
+/* ==========================================
+   DRAG AND DROP
+========================================== */
+
+.college-card {
+    position: relative;
+    cursor: grab;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.college-card:active {
+    cursor: grabbing;
+}
+
+
+.college-card.dragging {
+    opacity: 0.45;
+    transform: scale(0.98);
+}
+
+
+/* Drag handle */
+
+.drag-handle {
+    position: absolute;
+
+    left: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 22px;
+
+    letter-spacing: -4px;
+
+    color: #888;
+
+    cursor: grab;
+
+    user-select: none;
+
+    z-index: 5;
+}
+
+
+.drag-handle:active {
+    cursor: grabbing;
+}
+
+
+/* Give content some space for handle */
+
+.college-card .college-info {
+    padding-left: 35px;
+}
+
+/* ==========================================
+   COMPACT SAVED COLLEGE CARDS
+========================================== */
+
+.college-card {
+    position: relative;
+    cursor: grab;
+
+    padding: 16px 18px 16px 42px;
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+/* College information */
+
+.college-card .college-info {
+    padding-left: 0;
+    flex: 1;
+}
+
+
+.college-card .college-info h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+
+.college-card .college-meta {
+    margin-bottom: 5px;
+}
+
+
+.college-card .university {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* Right-side cutoff section */
+
+.college-card .college-result {
+    min-width: 150px;
+    text-align: right;
+}
+
+
+.college-card .college-result p {
+    display: inline;
+    margin: 0 5px 0 0;
+    font-size: 12px;
+}
+
+
+.college-card .college-result strong {
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+
+/* Eligibility badge */
+
+.college-card .chance {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+
+/* Drag handle */
+
+.drag-handle {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    letter-spacing: -4px;
+
+    color: #888;
+
+    cursor: grab;
+    user-select: none;
+}
+
+/* ==========================================
+   SAVED COLLEGE RESULT STYLING
+========================================== */
+
+.college-card .college-result {
+    min-width: 220px;
+    text-align: right;
+}
+
+/* Eligibility badge */
+.college-card .chance {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    border-radius: 20px;
+
+    background: #e8f7ee;
+    color: #198754;
+}
+
+/* Cutoff labels */
+.college-card .college-result p {
+    display: inline;
+    margin: 0 4px 0 0;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #777;
+}
+
+/* Cutoff values */
+.college-card .college-result strong {
+    margin-right: 12px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #2563eb;
+}
+
+/* Predicted cutoff */
+.college-card .college-result p:nth-of-type(3) + strong {
+    color: #198754;
+}

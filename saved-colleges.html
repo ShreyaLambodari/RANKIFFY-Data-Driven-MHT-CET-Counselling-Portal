@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saved Colleges | RANKIFY</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="saved-colleges.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- NAVBAR -->
+    <!-- ============================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            RANKIFY
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recommendations.html">Recommendations</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ============================= -->
+    <!-- SAVED COLLEGES -->
+    <!-- ============================= -->
+
+    <section class="saved-section">
+
+        
+<div class="saved-header">
+
+    <div class="saved-header-text">
+        <h1>Saved Colleges</h1>
+
+        <p>
+            Colleges you saved for your MHT-CET counselling preferences.
+        </p>
+    </div>
+
+    <button
+        type="button"
+        id="downloadSavedColleges"
+        class="download-colleges-btn">
+        Download CSV
+    </button>
+
+</div>
+
+
+
+        <div id="savedCollegeList" class="college-list">
+
+            <!-- Saved colleges will appear here -->
+
+        </div>
+
+
+        <div
+            id="noSavedColleges"
+            class="no-results"
+            style="display: none;">
+
+            <h3>No Saved Colleges</h3>
+
+            <p>
+                You haven't saved any colleges yet.
+            </p>
+
+            <a href="recommendations.html">
+                Back to Recommendations
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <script src="saved-colleges.js"></script>
+
+</body>
+
+</html>

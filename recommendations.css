@@ -1,0 +1,899 @@
+ /* ============================= */
+/* RECOMMENDATIONS PAGE */
+/* ============================= */
+
+.recommendations-page {
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+
+/* ============================= */
+/* MAIN LAYOUT */
+/* ============================= */
+
+.recommendations-layout {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* ============================= */
+/* FILTER CARD */
+/* ============================= */
+.filter-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+
+    position: sticky;
+    top: 110px;
+
+    margin-top: 30px;
+}
+
+
+/* ============================= */
+/* FILTER HEADER */
+/* ============================= */
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.filter-header h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.clear-btn {
+    border: none;
+    background: none;
+
+    color: var(--primary);
+
+    font-size: .8rem;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================= */
+/* FILTER GROUP */
+/* ============================= */
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+.filter-group:last-child {
+    margin-bottom: 0;
+}
+
+.filter-group label {
+    font-size: .9rem;
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+/* ============================= */
+/* FILTER SELECT */
+/* ============================= */
+
+.filter-group select {
+    width: 100%;
+    height: 46px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 0 12px;
+
+    font-size: .85rem;
+    font-family: inherit;
+
+    background: white;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.filter-group select:hover {
+    border-color: var(--primary);
+}
+
+.filter-group select:focus {
+    border-color: var(--primary);
+}
+
+
+/* ============================= */
+/* RESULTS SECTION */
+/* ============================= */
+
+.results-section {
+    min-width: 0;
+}
+
+
+/* ============================= */
+/* RESULTS HEADER */
+/* ============================= */
+
+.results-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+.results-header h2 {
+    margin: 0 0 5px;
+
+    font-size: 1.4rem;
+}
+
+.results-header p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    font-size: .85rem;
+}
+
+
+/* ============================= */
+/* SORT */
+/* ============================= */
+
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-box label {
+    color: var(--text-light);
+    font-size: .85rem;
+}
+
+.sort-box select {
+    height: 40px;
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    padding: 0 10px;
+
+    background: white;
+
+    font-family: inherit;
+    font-size: .85rem;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* ============================= */
+/* COLLEGE LIST */
+/* ============================= */
+
+.college-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* ============================= */
+/* COLLEGE CARD */
+/* ============================= */
+
+.college-card {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 25px;
+
+    background: #fff;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow: var(--shadow);
+
+    transition: .25s;
+}
+
+.college-card:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/* COLLEGE INFORMATION */
+/* ============================= */
+
+.college-info {
+    min-width: 0;
+}
+
+.college-info h3 {
+    margin: 0 0 12px;
+
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.college-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    color: var(--text-light);
+
+    font-size: .85rem;
+}
+
+.university {
+    margin: 12px 0 0;
+
+    color: var(--text-light);
+
+    font-size: .82rem;
+}
+
+
+/* ============================= */
+/* COLLEGE RESULT */
+/* ============================= */
+
+.college-result {
+    min-width: 160px;
+
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chance {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: .75rem;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.chance.high {
+    background: #eaf7ef;
+    color: #27804b;
+}
+
+.chance.very-high {
+    background: #e4f6ec;
+    color: #16733d;
+}
+
+.college-result p {
+    margin: 0 0 3px;
+
+    color: var(--text-light);
+
+    font-size: .75rem;
+}
+
+.college-result strong {
+    font-size: 1.15rem;
+
+    margin-bottom: 12px;
+}
+
+.college-result button {
+    border: none;
+
+    background: var(--primary);
+    color: white;
+
+    border-radius: 9px;
+
+    padding: 9px 14px;
+
+    font-family: inherit;
+    font-size: .8rem;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.college-result button:hover {
+    background: var(--primary-light);
+}
+
+
+/* ============================= */
+/* NO RESULTS */
+/* ============================= */
+
+.no-results {
+    background: #fff;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+}
+
+.no-results h3 {
+    margin-bottom: 8px;
+}
+
+.no-results p {
+    margin: 0;
+
+    color: var(--text-light);
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .recommendations-layout {
+        grid-template-columns: 230px 1fr;
+    }
+
+    .college-card {
+        flex-direction: column;
+    }
+
+    .college-result {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .recommendations-page {
+        padding: 40px 0;
+    }
+
+    .recommendations-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-card {
+        position: static;
+    }
+
+    .results-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .college-card {
+        padding: 18px;
+    }
+
+    .college-info h3 {
+        font-size: 1rem;
+    }
+
+    .college-meta {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+}
+
+/* ============================= */
+/* VIEW SAVED COLLEGES BUTTON */
+/* ============================= */
+
+.saved-colleges-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+#viewSavedColleges {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#viewSavedColleges:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+
+
+/* COLLEGE LIST */
+.college-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* COLLEGE CARD */
+.college-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: var(--shadow);
+    transition: .2s;
+}
+
+.college-card:hover {
+    transform: translateY(-1px);
+}
+
+
+
+.college-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.college-info h3 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    line-height: 1.35;
+}
+
+.college-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: var(--text-light);
+    font-size: .8rem;
+}
+
+.university {
+    margin: 5px 0 0;
+    color: var(--text-light);
+    font-size: .78rem;
+    line-height: 1.4;
+}
+
+
+
+.college-result {
+    flex: 0 0 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px 14px;
+    text-align: left;
+}
+
+.chance {
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: .7rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.chance.high {
+    background: #eaf7ef;
+    color: #27804b;
+}
+
+.chance.very-high {
+    background: #e4f6ec;
+    color: #16733d;
+}
+
+.college-result p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: .72rem;
+}
+
+.college-result strong {
+    font-size: .88rem;
+    margin: 0;
+}
+
+.college-result button {
+    flex-shrink: 0;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 11px;
+    font-family: inherit;
+    font-size: .76rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.college-result button:hover {
+    background: var(--primary-light);
+}
+
+
+
+@media (max-width: 900px) {
+    .recommendations-layout {
+        grid-template-columns: 230px 1fr;
+    }
+
+    .college-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .college-result {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .recommendations-page {
+        padding: 30px 0;
+    }
+
+    .recommendations-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-card {
+        position: static;
+    }
+
+    .results-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .college-card {
+        padding: 14px;
+    }
+
+    .college-info h3 {
+        font-size: .95rem;
+    }
+
+    .college-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .college-result {
+        gap: 8px 10px;
+    }
+}
+
+
+.college-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 18px 22px;
+}
+
+.college-info {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.college-info h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+}
+
+.college-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.82rem;
+}
+
+.university {
+    margin: 6px 0 0;
+    font-size: 0.8rem;
+    overflow-wrap: break-word;
+}
+
+.college-result {
+    flex: 0 0 300px;
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px 12px;
+    text-align: right;
+}
+
+
+.college-card {
+    display: block;
+    padding: 18px 22px;
+}
+
+.college-info h3 {
+    margin: 0 0 6px;
+}
+
+.university {
+    margin-top: 6px;
+}
+
+.college-result {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 14px;
+    width: 100%;
+}
+
+.college-result .chance {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.cutoff-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    flex: 1;
+    min-width: 0;
+}
+
+.cutoff-item {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.cutoff-item strong {
+    color: #2563eb;
+    font-size: 0.9rem;
+    margin-left: 3px;
+}
+
+.college-result button {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .college-result {
+        flex-wrap: wrap;
+    }
+
+    .cutoff-row {
+        flex-basis: 100%;
+    }
+
+    .college-result button {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .college-result {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cutoff-row {
+        gap: 10px 16px;
+    }
+
+    .college-result button {
+        align-self: flex-end;
+        margin-left: 0;
+    }
+}
+
+
+.college-result {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "badge badge"
+        "cutoffs cutoffs"
+        ". button";
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    width: 100%;
+    min-width: 0;
+}
+
+.college-result .chance {
+    grid-area: badge;
+    justify-self: start;
+    margin: 0;
+}
+
+.cutoff-row {
+    grid-area: cutoffs;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    min-width: 0;
+}
+
+.college-result .save-college-btn {
+    grid-area: button;
+    justify-self: end;
+    position: static;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .cutoff-row {
+        gap: 10px 16px;
+    }
+}
+
+
+/* Make recommendation cards more compact */
+.college-card {
+    padding: 14px 20px;
+}
+
+.college-info h3 {
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.college-meta {
+    gap: 6px;
+    line-height: 1.3;
+}
+
+.university {
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+.college-result {
+    gap: 7px;
+    margin-top: 8px;
+}
+
+.cutoff-row {
+    gap: 6px 20px;
+}
+
+.cutoff-item {
+    font-size: 0.76rem;
+}
+
+.cutoff-item strong {
+    font-size: 0.84rem;
+}
+
+.college-result .chance {
+    padding: 4px 9px;
+    font-size: 0.7rem;
+}
+
+.college-result .save-college-btn {
+    padding: 7px 12px;
+    font-size: 0.76rem;
+}
+
+
+.cutoff-row {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 22px;
+    row-gap: 8px;
+    align-items: center;
+    justify-content: start;
+}
+
+.cutoff-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 0.78rem;
+    color: var(--text-light);
+}
+
+.cutoff-item strong {
+    font-size: 0.86rem;
+    color: #2563eb;
+    margin: 0;
+}
+
+.college-result {
+    gap: 7px;
+    margin-top: 8px;
+}
+
+.college-result .save-college-btn {
+    justify-self: end;
+    align-self: end;
+}
